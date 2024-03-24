@@ -1,0 +1,867 @@
+/*!
+Theme Name: grafton-brewery
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: grafton-brewery
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+@font-face {
+    font-family: Bison;
+    src: url(/wp-content/themes/grafton-brewery/fonts/Bison-Bold\(PersonalUse\).ttf);
+    font-weight: normal;
+}
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+	max-width: 2500px;
+    margin: auto;
+    background: #fff;
+	scroll-behavior: smooth;
+
+}
+
+p {
+	font-family: 'courier prime';
+	font-size: 1.8em;
+}
+
+h1 {
+	font-family: bison;
+}
+
+header#masthead {
+	display: none;
+}
+
+.landing-gate {
+	min-height: 100vh;
+	max-height: 1200px;
+	background-repeat: no-repeat;
+    background-size: cover;
+	background-image: url('/wp-content/uploads/2023/06/landing-page-background-2.webp');
+	
+}
+
+.landing-gate .col {
+	min-height: 100vh;
+	max-height: 1200px;
+    display: flex;
+    
+}
+
+.landing-gate .col > img {
+	display: flex;
+    margin: auto;
+	max-width: 450px;
+}
+
+.about-heritage-brewery .intro-grafton{
+	min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/wp-content/uploads/2023/06/Brewery-2-2.webp');
+    background-position: 90%;
+    max-height: 1200px;
+}
+
+.about-heritage-brewery .intro-grafton h1, .about-heritage-brewery .intro-grafton h2 {
+	color: #e8e0c9;
+}
+.about-heritage-brewery .intro-grafton h1 {
+	font-size: 14vw;
+    font-family: 'Bison';
+    white-space: nowrap;
+
+}
+
+.about-heritage-brewery .intro-grafton h2 {
+	font-size: 7vw;
+    font-family: 'Bison';
+    white-space: nowrap;
+}
+
+.intro-grafton .container {
+	padding-top: 75px;
+}
+
+
+.intro-grafton .row .col-12:first-of-type {
+	display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.intro-grafton .row .col-12:last-of-type {
+	display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+#a-new-line {
+	background: #e8e0c9;
+	opacity: 50%;
+    width: 100%;
+    height: 10px;
+}
+
+#for-grafton-line {
+	background: #e8e0c9;
+	opacity: 50%;
+    width: 100%;
+    height: 10px;
+}
+
+.about-heritage-brewery .intro-grafton .col-12:first-of-type h2 {
+    margin-right: 20px;
+}
+
+.about-heritage-brewery .intro-grafton .col-12:last-of-type h2 {
+    margin-left: 20px;
+}
+
+.intro-text .container {
+    padding: 75px 0;
+}
+
+
+.intro-text .container p strong {
+    font-size: 2em;
+	font-family: 'bison';
+}
+
+.intro-text-2 .container {
+    padding: 75px 0;
+}
+
+#pride img {
+	padding-right: 50px;
+	padding-bottom: 50px;
+	width: 100%;
+    height: 100%;
+}
+
+.container-fluid.intro-slider .col {
+    padding: 0;
+}
+
+
+.carousel-item img {
+	object-fit: cover;
+    height: calc(200px + 20vw);
+    max-width: 1900px;
+    margin: auto;
+}
+
+.carousel-indicators [data-bs-target] {
+	width: 15px;
+    height: 15px;
+    border-radius: 50px;
+	border-top: none;
+	border-bottom: none;
+	margin-right: 8px;
+    margin-left: 8px;
+	margin-bottom: 20px;
+}
+
+#pride {
+	font-size: 5em;
+    max-width: 650px;
+    float: left;
+}
+
+.about-heritage-brewery{
+	min-height: 50vh;
+	background-repeat: no-repeat;
+    background-size: cover;
+	background-image: url('/wp-content/uploads/2023/06/paper-bg-1.webp');
+}
+
+.intro-text-2{
+	background-repeat: no-repeat;
+    background-size: cover;
+	background-image: url('/wp-content/uploads/2023/06/paper-bg-1.webp');
+}
+
+.brews .heading {
+	min-height: 200px;
+	background-repeat: no-repeat;
+    background-size: cover;
+	background-image: url('/wp-content/uploads/2023/06/landing-page-background-2.webp');
+	color: #e8e0c9;
+	display: flex;
+    height: 100%;
+    align-items: center;
+	padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.brews .heading h1 {
+    font-size: 5em;
+	line-height: 1;
+}
+
+
+.brews-img {
+	width: 100%;
+}
+
+.brew-tabs {
+	background: #5a5752;
+	min-height: 500px;
+	padding-bottom: 50px;
+}
+
+.brew-tabs > .container {
+	padding: 0;
+}
+
+#our-brews {
+	color: #e8e0c9;
+    font-size: 5em;
+	padding: 50px 0 30px 0;
+    font-weight: 500;
+    font-family: 'Bison';
+}
+
+button.accordion-button {
+	font-size: 1.25em;
+    font-family: 'Bison';
+    background: transparent;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.accordion-button:focus {
+	box-shadow: none;
+    border-color: white;
+}
+
+.accordion-button:not(.collapsed) {
+	color: white;
+    background: #b90032;
+}
+
+.tab-pane {
+    background: transparent;
+	border: none;
+}
+
+.nav-tabs .nav-link {
+	border: none;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: transparent;
+    color: white;
+    border: none;
+	border-bottom: 4px solid white;
+	font-weight: 500;
+    font-family: 'Bison';
+	font-size: 1.5em;
+
+}
+
+.nav-item .nav-link {
+    color: #918e89;
+	font-weight: 500;
+    font-family: 'Bison';
+	font-size: 1.5em;
+	padding: 16px 0px 16px 0;
+    margin-right: 55px;
+}
+
+.nav-tabs {
+    border: none;
+	padding-bottom: 80px;
+}
+
+.accordion-body p {
+	color: white;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+  border:none;
+  border-color: transparent;
+  border-bottom: 4px solid white;
+
+}
+
+li.nav-item {
+    font-size: 3em;
+}
+
+li.nav-item button {
+    text-transform: uppercase;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button::after {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+	border-radius: 0;
+}
+
+.beers-with-flavours {
+	min-height: 100vh;
+	background-repeat: no-repeat;
+    background-size: cover;
+	background-image: url('/wp-content/uploads/2023/06/paper-bg-1.webp');
+}
+
+.beers-with-flavours .heading {
+	padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.beers-with-flavours img {
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.beers-with-flavours .full-img {
+	padding: 0;
+}
+
+.beers-with-flavours .full-img img {
+	max-height: 700px;
+    object-fit: cover;
+}
+
+.rl-img-txt .row .col-lg-6:first-of-type, .lr-txt-img .row .col-lg-6:last-of-type {
+	padding: 0;
+}
+
+
+.sign-up {
+	background-image: url('/wp-content/uploads/2023/06/paper-bg-1.webp');
+	padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.sign-up h1 {
+    font-size: 6em;
+	white-space: nowrap;
+	position: relative;
+    top: -20px;
+}
+
+.sign-up .col-12 > div:first-of-type {
+	display: flex;
+	gap: 25px;
+}
+
+.ginput_container input {
+	border: 2px solid black;
+	padding: 20px!important;
+	font-size: 1.5em!important;
+}
+
+input::placeholder {
+    color: black;
+    font-family: 'Courier Prime';
+    /* font-size: 1.5em; */
+    font-weight: 600;
+}
+
+input:focus-visible {
+	outline-color: #94091d;
+}
+
+input#gform_submit_button_1 {
+	background: #5a5752;
+    color: #e8e0c9;
+    border: none;
+    text-transform: uppercase;
+    padding: 10px 30px;
+	font-size: 1.5em;
+	font-family: 'Bison';
+}
+
+.gform_footer {
+    justify-content: center;
+}
+
+
+
+
+
+
+.site-footer {
+	min-height: 200px;
+	background-repeat: no-repeat;
+    background-size: cover;
+	background-image: url('/wp-content/uploads/2023/06/landing-page.jpg');
+	padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.site-footer h2 {
+	color: #e8e0c9;
+	font-family: 'Bison';
+    font-weight: 500;
+    font-size: 2.25em;
+}
+
+.site-footer h3 {
+	color: #e8e0c9;
+	font-family: 'courier prime';
+	font-size: 1.5em;
+}
+
+.site-footer .col-12 > div {
+	display: flex;
+    align-items: center;
+}
+
+.site-footer .col-12 {
+	display: flex;
+	justify-content: center;
+}
+
+.site-footer .col-12 > div > img {
+    padding: 20px;
+}
+
+
+#modal-overlay {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.7);
+	/* display: none; */
+	align-items: center;
+	justify-content: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.5s linear;
+	left: 0;
+	right: 0;
+  }
+  #modal-overlay #modal {
+	max-width: 650px;
+	width: 100%;
+	background: white;
+	height: 400px;
+  
+	display: flex;
+	flex-direction: column;
+	padding:10px;
+	transition: 1s linear;
+  
+	  background: url(/wp-content/uploads/2023/06/age.png);
+	  background-repeat: no-repeat;
+	  background-size: contain;
+	  background-position: center center;
+  }
+  
+  #modal-overlay #modal .modal-footer {
+	  margin-top: auto;
+	  display: flex;
+	  justify-content: center;
+	  align-content: center;
+	  height: 100%;
+  }
+  
+  #modal-overlay #modal .modal-footer h1 {
+	  display: block;
+	  max-width: 280px;
+	  text-align: center;
+	  color: white;
+	  padding-bottom: 20px;
+	  margin-top: 30px;
+	  font-size: 2em;
+  }
+  
+  #modal-overlay #modal .modal-footer #modal-buttons{
+	  display: block;
+	  flex-basis: 100%;
+	  text-align: center;
+  }
+  
+  #modal-buttons a {
+	  text-decoration: none;
+	  color: #910b23;
+  }
+
+  #modal-buttons button:last-child {
+	background: white;
+  }
+  
+  div#modal-buttons button {
+	  border: none;
+	  font-family: 'bison';
+	  font-size: 2em;
+	  padding: 0px 20px;
+  }
+  
+  div#modal-buttons button:first-of-type {
+	  color: #fff;
+	  background: #910b23;
+  }
+
+
+@media (min-width: 1200px) {
+	section.brews .heading h1 span {
+		display: block;
+	}
+}
+
+@media (max-width: 768px) {
+	.about-heritage-brewery .intro-grafton {
+		min-height: 60vh;
+	}
+
+}
+
+
+@media (max-width: 991px) {
+	.tab-content>.tab-pane {
+	  display: block;
+	  opacity: 1;
+	}
+
+	
+
+	#pride img {
+		max-width: 350px;
+	}
+
+	.rl-img-txt .row {
+		flex-direction: column-reverse;
+	}
+
+	.brews-img {
+		width: 100%;
+		max-width: 150px;
+		margin: auto;
+		display: block;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	section.beers-with-flavours .lr-txt-img .col-lg-6:first-of-type {
+		padding-bottom: 50px;
+	}
+
+	section.beers-with-flavours .rl-img-txt .col-lg-6:last-of-type {
+		padding-bottom: 50px;
+		padding-top: 50px;
+	}
+	
+
+
+	
+
+	
+}
+
+
+
+@media (max-width: 600px) {
+	p {
+		font-size: 1.25em;
+	}
+
+	h1 {
+		font-size: 3em!important;
+	}
+
+	#modal-overlay #modal .modal-footer h1 {
+		font-size: 2em!important;
+	}
+
+	.brews .heading {
+		padding: 50px 0;
+	}
+
+	.landing-gate .col > img {
+		max-width: 300px;
+		min-width: 100%;
+	}
+
+	.intro-text .container p strong {
+		font-size: 1.5em;
+	}
+
+	#pride img {
+		padding-left: 60px;
+    	padding-right: 60px;
+	}
+
+	#pride {
+		text-align: center;
+		width: 100%;
+	}
+
+	.sign-up .col-12 > div:first-of-type {
+		display: block;
+	}
+
+	.ginput_container input {
+		padding: 10px!important;
+	}
+
+	.site-footer .col-12 > div > img {
+		padding: 20px;
+		max-width: 130px;
+	}
+
+	.site-footer h2 {
+		font-size: 1.25em;
+		max-width: 160px;
+	}
+
+	.site-footer h3 {
+		text-align: center;
+    	padding: 20px;
+		font-size: 1em;
+	}
+}
+
+
+@media (min-width: 992px) {
+	.lr-txt-img .row {
+		justify-content: flex-end;
+	}
+
+	.lr-txt-img .row .col-lg-6:first-of-type {
+		max-width: calc(1320px/2);
+	}
+
+	
+	.lr-txt-img .row .col-lg-6:first-of-type {
+		padding: 40px;
+		padding-top: 0;
+	}
+
+
+	.rl-img-txt .row .col-lg-6:last-of-type {
+		max-width: calc(1320px/2);
+	}
+
+
+	.rl-img-txt .row .col-lg-6:last-of-type {
+		padding: 40px;
+	}
+
+
+
+}
+
+@media screen and (min-width:1900px) {
+	.landing-gate .col {
+		max-height: 60vh;
+		min-height: 60vh;
+	}
+
+	.landing-gate {
+		max-height: 60vh;
+		min-height: 60vh;
+	}
+
+	.about-heritage-brewery .intro-grafton {
+		min-height: 60vh;
+		max-height: 60vh;
+	}
+}
+
+@media (max-width: 300px) {
+	div#modal-buttons button {
+		font-size: inherit!important;
+	}
+	#modal-overlay #modal .modal-footer h1 {
+		font-size: 1em!important;
+	}
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+	section.beers-with-flavours .lr-txt-img .col-lg-6:first-of-type, 
+	section.beers-with-flavours .rl-img-txt .col-lg-6:last-of-type{
+		max-width: 540px;
+		margin: auto;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	section.beers-with-flavours .lr-txt-img .col-lg-6:first-of-type, 
+	section.beers-with-flavours .rl-img-txt .col-lg-6:last-of-type{
+		max-width: 720px;
+		margin: auto;
+	}
+}
+
+    .sign-up-popup {
+			transform: translate(2500px, 0 );
+			top: 0;
+			bottom: 0;
+			position: fixed;
+			transition: 0.5s;
+			background: #5a5752fa;
+			z-index: 100;
+			min-height: 500px;
+			width: 100%;
+			text-align: center;
+			padding: 35px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			max-width: 2500px;
+			font-family: bison;
+			color: white;
+			overflow: scroll;
+			min-height: 100%;
+}
+
+    .sign-up-popup h1 {
+        font-size: 4em;
+    }
+    .sign-up-popup p {
+        font-size: 1.5em;
+		text-transform: uppercase;
+		font-family: 'Bison';
+		max-width: 580px;
+		margin-left: auto;
+		margin-right: auto;
+    }
+
+	div#popup-content img {
+		width: 100%;
+		max-width: 1200px;
+		padding-top: 30px;
+		padding-bottom: 40px;
+	}
+
+
+    .sign-up-popup label {
+        font-family: bison;
+        font-size: 2em;
+    }
+
+    .sign-up-popup input {
+		transform: scale(2.5);
+		margin-right: 16px;
+		position: relative;
+		top: -4px;
+    }
+
+    .popup-content {
+        position: relative;
+		padding-top: 50px;
+    }
+
+
+	div.popup-form .ginput_container input {
+		border: 2px solid black;
+		padding: 10px!important;
+		font-size: 1.5em!important;
+		transform: scale(1)!important;
+		line-height: 1!important;
+	}
+
+	div.popup-form input#gform_submit_button_1 {
+		transform: scale(1)!important;
+		background: white;
+		color: #5a5752;
+		border: none;
+		text-transform: uppercase;
+		padding: 10px 30px;
+		font-size: 1.5em;
+		font-family: 'Bison';
+
+	}
+
+	#popup-content > label {
+		display: block;
+	}
+
+	div.popup-form {
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div#gform_confirmation_message_1 {
+		font-size: 2.5em;
+		margin-bottom: 50px;
+		text-align: center;
+		font-family: bison;
+	}
+
+    @media (max-width: 600px) {
+
+		div#gform_confirmation_message_1 {
+			font-size: 1.5em;
+		}
+
+        .sign-up-popup {
+            padding: 25px;
+        }
+        .sign-up-popup p {
+			font-size: 1.25em;
+            margin-bottom: 5px;
+        }
+
+		div#popup-content img {
+			max-width: 200px;
+		}
+
+		.sign-up-popup h1 {
+			font-size: 3.8em!important;
+		}
+    }
+
+
+	section.error-404.not-found {
+		background-image: url('/wp-content/uploads/2023/06/paper-bg-1.webp');
+		height: 100vh;
+		display: flex;
+		align-content: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+	}
+
+	section.error-404.not-found h1 {
+		font-size: 3.5rem;
+	}
+
+	.return {
+		border: 3px solid #910b23;
+		max-width: 270px;
+		text-align: center;
+		padding: 7px;
+		border-radius: 5px;
+		margin: auto;
+		margin-top: 30px;
+	}
+
+	section.error-404.not-found a {
+		color: #910b23;;
+		text-decoration: none;
+	}
+
+	section.error-404.not-found img {
+		width: 100%;
+		height: auto;
+		max-width: 400px;
+	}
